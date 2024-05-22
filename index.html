@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCS Determination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Images/cows description.jpg" alt="Main" style="width: 325px; height: 413px">
+        <h1>Determine Body Condition Score (BCS)</h1>
+        <form id="bcs-form">
+            <div id="step1" class="step">
+                <label>Does the line form a flattened V or a crescent/flattened U?</label>
+                <select id="line-shape" name="line-shape" onchange="handleSelection(1)">
+                    <option value="">Select an option</option>
+                    <option value="flattened-v">Flattened V</option>
+                    <option value="flattened-u">Crescent/Flattened U</option>
+                </select>
+            </div>
+            <!-- More steps will be appended here when an option is selected and the process continues till an equal value is reached -->
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="scripts.js" async></script>
+</body>
+</html>
