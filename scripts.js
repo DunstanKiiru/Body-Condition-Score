@@ -20,7 +20,7 @@ function handleSelection(step) {
             if (currentValue === 'flattened-v') {
                 addHooksShapeStep();
             } else if (currentValue === 'flattened-u') {
-                // Trigger a page refresh when switching from 'flattened-v' to 'flattened-u'
+                
                 if (previousLineShapeValue === 'flattened-v') {
                     localStorage.setItem('previousLineShapeValue', previousLineShapeValue);
                     location.reload();
