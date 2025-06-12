@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: black;
+    background-color: #f8f8f8;
 }
 
 .container {
@@ -40,7 +40,6 @@ select {
     color: #333;
 }
 
-/* Media Queries */
 @media screen and (max-width: 600px) {
     .container {
         padding: 10px;
